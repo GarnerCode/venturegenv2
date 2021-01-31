@@ -1,0 +1,117 @@
+body {
+  background-image: url("./media/parch.png");
+  background-repeat: no-repeat;
+}
+
+/*Navigation*/
+nav {
+  font-family: "Cinzel", serif;
+}
+
+.bg-dark {
+  background-image: url("./media/wood.jpg");
+  -webkit-box-shadow: 0px -2px 5px black inset;
+          box-shadow: 0px -2px 5px black inset;
+}
+
+a.navbar-brand {
+  text-shadow: 2px 2px 5px black;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+a.nav-link {
+  text-shadow: 2px 2px 5px black;
+}
+
+/*Jumbotron*/
+div.jumbotron {
+  font-family: "Cinzel", serif;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+div.jumbotron .display-4 {
+  text-align: center;
+  font-weight: bold;
+}
+
+div.jumbotron p.lead {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+div.jumbotron a#btn-copp.btn.btn-primary.btn-lg {
+  text-shadow: 2px 2px 5px black;
+  -webkit-box-shadow: 2px 2px 5px black;
+          box-shadow: 2px 2px 5px black;
+  background-image: url("./media/copper.jpg");
+  border: 2px solid #89422c;
+  font-weight: bold;
+}
+
+div.jumbotron a#btn-copp.btn.btn-primary.btn-lg:hover {
+  -webkit-box-shadow: 4px 4px 5px black;
+          box-shadow: 4px 4px 5px black;
+}
+
+div.jumbotron a#btn-silv.btn.btn-primary.btn-lg {
+  text-shadow: 2px 2px 5px black;
+  -webkit-box-shadow: 2px 2px 5px black;
+          box-shadow: 2px 2px 5px black;
+  background-image: url("./media/silver.jpg");
+  border: 2px solid #98999d;
+  font-weight: bold;
+}
+
+div.jumbotron a#btn-silv.btn.btn-primary.btn-lg:hover {
+  -webkit-box-shadow: 4px 4px 5px black;
+          box-shadow: 4px 4px 5px black;
+}
+
+div.jumbotron a#btn-gold.btn.btn-primary.btn-lg {
+  text-shadow: 2px 2px 5px black;
+  -webkit-box-shadow: 2px 2px 5px black;
+          box-shadow: 2px 2px 5px black;
+  background-image: url("./media/gold.jpg");
+  border: 2px solid #bc8221;
+  font-weight: bold;
+}
+
+div.jumbotron a#btn-gold.btn.btn-primary.btn-lg:hover {
+  -webkit-box-shadow: 4px 4px 5px black;
+          box-shadow: 4px 4px 5px black;
+}
+
+div.jumbotron img.btn-img {
+  border: 10px solid transparent;
+  -o-border-image: url("./media/gold.jpg") 50 stretch;
+     border-image: url("./media/gold.jpg") 50 stretch;
+  -webkit-box-shadow: 2px 2px 5px black;
+          box-shadow: 2px 2px 5px black;
+  width: 100%;
+  height: 90%;
+  margin-top: 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+div.jumbotron img.btn-img:hover {
+  -webkit-box-shadow: 4px 4px 5px black;
+          box-shadow: 4px 4px 5px black;
+}
+
+/*Footer*/
+footer {
+  background-image: url("./media/wood.jpg");
+  color: white;
+  -webkit-box-shadow: 0px 2px 5px black inset;
+          box-shadow: 0px 2px 5px black inset;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+footer p {
+  padding-top: 5px;
+}
+/*# sourceMappingURL=styles.css.map */
