@@ -1,5 +1,11 @@
+/* Mixins */
+
 @mixin textshadow {
   text-shadow: 2px 2px 5px black;
+}
+
+@mixin text-highlight {
+  color: goldenrod !important;
 }
 
 @mixin boxshadow {
@@ -10,25 +16,43 @@
   box-shadow: 4px 4px 5px black;
 }
 
-@mixin font {
-  font-family: "Cinzel", serif;
-}
-
 @mixin border {
   border: 10px solid transparent;
   border-image: url("./media/gold.jpg") 50 stretch;
 }
 
+@mixin section-header {
+  text-align: center;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+@mixin body-text {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+@mixin btn-style {
+  border: 3px solid #bb8026;
+  color: black;
+  font-size: 30px;
+  font-weight: 600;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px black;
+  &:hover {
+    box-shadow: 4px 4px 5px black;
+  }
+  transition: 0.3s;
+  background-image: url("./media/gold.jpg");
+}
+
 body {
   background-image: url("./media/parch.png");
   background-repeat: no-repeat;
+  font-family: "Cinzel", serif;
 }
 
 /*Navigation*/
-
-nav {
-  @include font;
-}
 
 .bg-dark {
   background-image: url("./media/wood.jpg");
@@ -39,6 +63,9 @@ a.navbar-brand {
   @include textshadow;
   font-size: 30px;
   font-weight: bold;
+  &:hover {
+    @include text-highlight;
+  }
 }
 
 a.nav-link {
@@ -48,7 +75,6 @@ a.nav-link {
 /*Jumbotron*/
 
 div.jumbotron {
-  @include font;
   background-color: rgba(0, 0, 0, 0);
   .display-4 {
     text-align: center;
@@ -58,36 +84,6 @@ div.jumbotron {
     text-align: center;
     font-size: 30px;
     font-weight: 600;
-  }
-  a#btn-copp.btn.btn-primary.btn-lg {
-    @include textshadow;
-    @include boxshadow;
-    background-image: url("./media/copper.jpg");
-    border: 2px solid #89422c;
-    font-weight: bold;
-    &:hover {
-      @include boxshadow-hover;
-    }
-  }
-  a#btn-silv.btn.btn-primary.btn-lg {
-    @include textshadow;
-    @include boxshadow;
-    background-image: url("./media/silver.jpg");
-    border: 2px solid #98999d;
-    font-weight: bold;
-    &:hover {
-      @include boxshadow-hover;
-    }
-  }
-  a#btn-gold.btn.btn-primary.btn-lg {
-    @include textshadow;
-    @include boxshadow;
-    background-image: url("./media/gold.jpg");
-    border: 2px solid #bc8221;
-    font-weight: bold;
-    &:hover {
-      @include boxshadow-hover;
-    }
   }
   img.btn-img {
     @include border;
@@ -102,12 +98,47 @@ div.jumbotron {
   }
 }
 
+/*Generators*/
+.header {
+  @include section-header;
+}
+
+form {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  label {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 15px;
+  }
+  input.btn-generate {
+    @include btn-style;
+    margin-top: 15px;
+  }
+  select {
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+  }
+}
+
+ul.list1 {
+  @include body-text;
+  list-style: none;
+  text-align: center;
+}
+
+.description {
+  text-align: center;
+  font-size: 25px;
+}
+
 /*Footer*/
 footer {
+  height: 50px;
   background-image: url("./media/wood.jpg");
   color: white;
   box-shadow: 0px 2px 5px black inset;
-  padding-bottom: 10px;
   text-align: center;
   p {
     padding-top: 5px;

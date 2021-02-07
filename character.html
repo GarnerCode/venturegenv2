@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FontAwesome-->
+    <script src="https://kit.fontawesome.com/3fce74ea87.js" crossorigin="anonymous"></script>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+    <!--Bootstrap 4-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--Main Stylesheet-->
+    <link rel="stylesheet" href="css/styles.css">
+    <title>VentureGen</title>
+</head>
+<body>
+    <!--Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">VentureGen</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="character.html">Character</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="encounter.html">Encounter</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="treasure.html">Treasure</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+      <!--Content-->
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1 class="header">Character Generator</h1>
+            </div>
+        </div>
+        <hr>
+        <div class="row"> <!--Dropdown Selections-->
+            <form action="#" method="#">
+                <!--Race-->
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <label for="races">Race</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <select name="races" id="races">
+                            <option value="dragonborn">Dragonborn</option>
+                            <option value="dwarf">Dwarf</option>
+                            <option value="elf">Elf</option>
+                            <option value="gnome">Gnome</option>
+                            <option value="halfelf">Half-Elf</option>
+                            <option value="halfling">Halfling</option>
+                            <option value="halforc">Half-Orc</option>
+                            <option value="human">Human</option>
+                            <option value="tiefling">Tiefling</option>
+                        </select>
+                    </div>
+                </div>
+                <!--Class-->
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <label for="classes">Class</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <select name="classes" id="classes">
+                            <option value="barbarian">Barbarian</option>
+                            <option value="bard">Bard</option>
+                            <option value="cleric">Cleric</option>
+                            <option value="druid">Druid</option>
+                            <option value="fighter">Fighter</option>
+                            <option value="monk">Monk</option>
+                            <option value="paladin">Paladin</option>
+                            <option value="ranger">Ranger</option>
+                            <option value="rogue">Rogue</option>
+                            <option value="sorcerer">Sorcerer</option>
+                            <option value="warlock">Warlock</option>
+                            <option value="wizard">Wizard</option>
+                        </select>
+                    </div>
+                </div>
+                <!--Level-->
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <label for="levels">Level</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <select name="levels" id="levels">
+                            <option value="0">Level 0</option>
+                            <option value="1">Level 1</option>
+                            <option value="2">Level 2</option>
+                            <option value="3">Level 3</option>
+                            <option value="4">Level 4</option>
+                            <option value="5">Level 5</option>
+                            <option value="6">Level 6</option>
+                            <option value="7">Level 7</option>
+                            <option value="8">Level 8</option>
+                            <option value="9">Level 9</option>
+                            <option value="10">Level 10</option>
+                            <option value="11">Level 11</option>
+                            <option value="12">Level 12</option>
+                            <option value="13">Level 13</option>
+                            <option value="14">Level 14</option>
+                            <option value="15">Level 15</option>
+                            <option value="16">Level 16</option>
+                            <option value="17">Level 17</option>
+                            <option value="18">Level 18</option>
+                            <option value="19">Level 19</option>
+                            <option value="20">Level 20</option>
+                        </select>
+                    </div>
+                </div>
+                <!--Generate Button-->
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <input class="btn-generate" type="submit" value="Generate">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h1 class="header">Stats</h1>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-lg-6 col-12">
+                <ul class="list1">
+                    <li><strong>STR: </strong>Being able to crush a tomato.</li>
+                    <li><strong>DEX: </strong>Being able to dodge a tomato.</li>
+                    <li><strong>CON: </strong>Being able to eat a bad tomato.</li>
+                </ul>
+            </div>
+            <div class="col-lg-6 col-12">
+                <ul class="list1">
+                    <li><strong>INT: </strong>Being able to know a tomato is a fruit.</li>
+                    <li><strong>WIS: </strong>Knowing not to put a tomato in a fruit salad.</li>
+                    <li><strong>CHA: </strong>Being able to sell a tomato-based fruit salad.</li>
+                </ul>
+            </div>
+        </div>
+            <h1 class="header">Proficiency Bonus</h1>
+            <hr>
+        <div class="row">
+            <p class="description">Bonus points based on your level, applied to skills your character is proficient in.</p>
+        </div>
+        <h1 class="header">Saving Throws</h1>
+        <hr>
+        <div class="row">
+            <div class="col-lg-6 col-12">
+                <ul class="list1">
+                    <li><strong>STR: </strong></li>
+                    <li><strong>DEX: </strong></li>
+                    <li><strong>CON: </strong></li>
+                </ul>
+            </div>
+            <div class="col-lg-6 col-12">
+                <ul class="list1">
+                    <li><strong>INT: </strong></li>
+                    <li><strong>WIS: </strong></li>
+                    <li><strong>CHA: </strong></li>
+                </ul>
+            </div>
+        </div>
+        <h1 class="header">Skills</h1>
+        <hr>
+        <div class="row">
+            <div class="col-lg-4 col-12">
+                <ul class="list1">
+                    <li><strong>Acrobatics: </strong></li>
+                    <li><strong>Animal Handling: </strong></li>
+                    <li><strong>Arcana: </strong></li>
+                    <li><strong>Athletics: </strong></li>
+                    <li><strong>Deception: </strong></li>
+                    <li><strong>History: </strong></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-12">
+                <ul class="list1">
+                    <li><strong>Insight: </strong></li>
+                    <li><strong>Intimidation: </strong></li>
+                    <li><strong>Investigation: </strong></li>
+                    <li><strong>Medicine: </strong></li>
+                    <li><strong>Nature: </strong></li>
+                    <li><strong>Perception: </strong></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-12">
+                <ul class="list1">
+                    <li><strong>Performance: </strong></li>
+                    <li><strong>Persuasion: </strong></li>
+                    <li><strong>Religion: </strong></li>
+                    <li><strong>Sleight of Hand: </strong></li>
+                    <li><strong>Stealth: </strong></li>
+                    <li><strong>Survival: </strong></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <h1 class="header">Proficient Skills</h1>
+        <hr>
+        <div class="row">
+            <div class=col-12>
+                <p class="description">Skills that you can add your proficiency bonus</p>
+            </div>
+        </div>
+        <h1 class="header">Misc Stats</h1>
+        <hr>
+        <div class="row">
+            <div class="col-lg-4 col-12 text-center">
+                <h1 class="header">Armor Class: </h1>
+            </div>
+            <div class="col-lg-4 col-12 text-center">
+                <h1 class="header">Initiative: </h1>
+            </div>
+            <div class="col-lg-4 col-12 text-center">
+                <h1 class="header">Speed: </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h1 class="header">Max Hit Points: </h1>
+            </div>
+        </div>
+      </div>
+      <!--Footer-->
+      <footer>
+          <p><i class="far fa-copyright"></i> Copyright 2021</p>
+      </footer>
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!--Popper.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <!--Bootstrap.js-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
